@@ -1,0 +1,52 @@
+{
+  "name": "ionic4-tooltips",
+  "version": "2.0.4",
+  "description": "Tooltips module for Ionic 2+ and Angular 8+ apps",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrquick17/ionic4-tooltips"
+  },
+  "authors": [
+    {
+      "name": "Ibby Hadeed",
+      "email": "<ibby@zyra.ca>"
+    },
+    {
+      "name": "Jeremy Quick",
+      "email": "<me@jrquick.com>"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "peerDependencies": {
+    "@angular/core": "^14.0.0"
+  },
+  "module": "fesm2015/ionic4-tooltips.mjs",
+  "es2020": "fesm2020/ionic4-tooltips.mjs",
+  "esm2020": "esm2020/ionic4-tooltips.mjs",
+  "fesm2020": "fesm2020/ionic4-tooltips.mjs",
+  "fesm2015": "fesm2015/ionic4-tooltips.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/ionic4-tooltips.mjs",
+      "es2020": "./fesm2020/ionic4-tooltips.mjs",
+      "es2015": "./fesm2015/ionic4-tooltips.mjs",
+      "node": "./fesm2015/ionic4-tooltips.mjs",
+      "default": "./fesm2020/ionic4-tooltips.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}
