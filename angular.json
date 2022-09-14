@@ -177,10 +177,10 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ionic4-tooltips/tsconfig.lib.json",
-            "project": "projects/ionic4-tooltips/ng-package.json"
+            "project": "projects/ionic4-tooltips/ng-package.json",
+            "tsConfig": "projects/ionic4-tooltips/tsconfig.lib.json"
           }
         },
         "test": {
